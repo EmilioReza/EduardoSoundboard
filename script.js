@@ -26,7 +26,7 @@ soundboard.appendChild(createButton('FUCK YOUUUU FUCK YOUUUU', 'sounds/sound9.mp
 soundboard.appendChild(createButton('FUCKING DAMMIT', 'sounds/sound10.mp3'));
 soundboard.appendChild(createButton('I got this bitch on lock', 'sounds/sound11.mp3'));
 soundboard.appendChild(createButton('It was a sign from God ... FUCK', 'sounds/sound12.mp3'));
-soundboard.appendChild(createButton('AAAAAHHHH', 'sounds/sound13.mp3'));
+soundboard.appendChild(createButton('AAAAAAA HHHHHHH', 'sounds/sound13.mp3'));
 soundboard.appendChild(createButton('AH AH AH', 'sounds/sound14.mp3'));
 soundboard.appendChild(createButton('aaaahhhh', 'sounds/sound15.mp3'));
 soundboard.appendChild(createButton('HA HO HA HO HA HO', 'sounds/sound16.mp3'));
