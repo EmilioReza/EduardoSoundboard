@@ -44,15 +44,7 @@ body {
     transform: translateY(-50%);
   }
   
-  /* Top vertical line */
-  .top-line {
-    width: 5px;
-    height: calc(5%); /* Stops before the title */
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
+
   /* Bottom vertical line */
   .bottom-line {
     width: 5px;
