@@ -6,34 +6,91 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #0073e6; /* Blue background like a ping pong table */
+    position: relative;
   }
   
   h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    z-index: 1;
+  }
+  
+  /* White line styles */
+  .horizontal-line,
+  .vertical-line {
+    position: absolute;
+    background-color: white;
+    z-index: 0;
+  }
+  
+  /* Left horizontal line */
+  .left-line {
+    height: 5px;
+    width: calc(50% - 300px); /* Stops before the buttons area */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  /* Right horizontal line */
+  .right-line {
+    height: 5px;
+    width: calc(50% - 300px);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  /* Top vertical line */
+  .top-line {
+    width: 5px;
+    height: calc(15%); /* Stops before the title */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Bottom vertical line */
+  .bottom-line {
+    width: 5px;
+    height: calc(15%); /* Stops before the buttons area */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .soundboard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-    width: 80%;
-    max-width: 500px;
-  }
+    grid-template-columns: repeat(6, minmax(100px, 1fr)); /* 6 columns to fit 30 buttons well */
+    gap: 15px;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 1;
+  }  
   
   button {
-    padding: 15px;
+    padding: 10px 10px; /* Adjust padding for a rectangular shape */
     font-size: 1em;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    border: 3px solid #333;
+    border-radius: 0; /* Remove border radius for rectangular buttons */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.1s ease;
+    text-align: center;
+    
   }
   
   button:hover {
-    background-color: #45a049;
+    transform: scale(1.1);
   }
   
+  button:active {
+    transform: scale(1);
+    background-color: #ccc;
+  }
