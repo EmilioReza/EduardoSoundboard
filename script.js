@@ -43,4 +43,4 @@ soundboard.appendChild(createButton('That was some pussy shit', 'sounds/sound26.
 soundboard.appendChild(createButton('get FUCKED you little bitch ass', 'sounds/sound27.mp3'));
 soundboard.appendChild(createButton('YOU FUCKING SUCK YOU LITTLE BITCH ASS CUNT', 'sounds/sound28.mp3'));
 soundboard.appendChild(createButton('Fucking dogshit ass motherfucker you little bitch ass', 'sounds/sound29.mp3'));
-soundboard.appendChild(createButton('Skibidi Toilet (yet to be added)', 'sounds/sound30.mp3'));
+soundboard.appendChild(createButton('Skibidi Toilet (yet to be added)', 'sounds/skibidi.mp3'));
